@@ -1,0 +1,27 @@
+.transaction-history{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.top{
+    background-color: aqua;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-left: 100px;
+   padding-right: 100px;
+}
+.type{
+
+    margin-right: 24px;
+    background-color: beige;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+ 
+}
