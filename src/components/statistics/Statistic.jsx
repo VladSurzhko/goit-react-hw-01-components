@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import "../statistics/statistic.css"
+import Stcss from "../statistics/statistic.module.css"
 import data from "../statistics/data.json";
 
 
@@ -8,14 +8,14 @@ import data from "../statistics/data.json";
 
 
 const Statistic = ({title}) => (
-  <section className="statistics">
-    {title && <h2 className={title}>{title}</h2>}
+  <section className={Stcss.statistics}>
+    {title && <h2 className={Stcss.title}>{title}</h2>}
 
-    <ul className="stat-list">
+    <ul className={Stcss.statlist}>
       {data.map((item) => (
-        <li key={item.id} className="item">
-          <span className="label">{item.label}</span>
-          <span className="percentage">{item.percentage}%</span>
+        <li key={item.id} className={Stcss.item}>
+          <span className={Stcss.label}>{item.label}</span>
+          <span className={Stcss.percentage}>{item.percentage}%</span>
         </li>
       ))}
     </ul>
