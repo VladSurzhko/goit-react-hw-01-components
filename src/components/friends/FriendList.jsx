@@ -1,50 +1,51 @@
 import friends from "../friends/friends.json"
-import "../friends/friends.css"
+import fcss from "../friends/friends.module.css"
 
-const friendsList = () => (
-
-    <ul className="friend-list">
-      {friends.map((item, isOnline) => (
-      <li className="items" key={item.id}>
-      <span className="status">{isOnline}</span>
-      <img className="avatars" src={item.avatar} alt="User avatar" width="70" />
-       <p className="name">{item.name}</p>
+const FriendListItem = ({ avatar, name, isOnline }) => {
+  const statusClassName = isOnline ? fcss.online: fcss.offline;
+  
+  return (
+    <li className={fcss.items}>
+      <span className={`${fcss.status} ${statusClassName}`}></span>
+      <img className={fcss.avatar} src={avatar} alt="User avatar" width="42" />
+      <p className={fcss.name}>{name}</p>
     </li>
-      ))}
-    </ul>
+  );
+};
+
+const FriendsList = () => (
+  <ul className={fcss.friendlist}>
+    {friends.map((friend) => (
+      <FriendListItem
+        key={friend.id}
+        avatar={friend.avatar}
+        name={friend.name}
+        isOnline={friend.isOnline}
+      />
+    ))}
+  </ul>
 );
 
-export default friendsList;
+export default FriendsList;
 
 
 
 
-// import friends from "../friends/friends.json"
+// const friendsList = () => (
 
-// const friendsList = () => {
-//   return friends.map((items) =>{
-//     return(
-// <ul class="friend-list">
-//   <li class="item" key={items.id}>
-//     <span className="status">{items.isOnline}</span>
-//   <img class="avatar" src={items.avatar} alt="User avatar" width="48" />
-//     <p class="name">{items.name}</p>
+//     <ul className="friend-list">
+//       {friends.map((item, isOnline) => (
+//       <li className="items" key={item.id}>
+//       <span className="status">{isOnline}</span>
+//       <img className="avatars" src={item.avatar} alt="User avatar" width="70" />
+//        <p className="name">{item.name}</p>
 //     </li>
-//     <li class="item">
-//   <span className="status">{items.isOnline}</span>
-//   <img class="avatar" src={items.avatar} alt="User avatar" width="48" />
-//   <p class="name">{items.name}</p>
-//     </li>
-//     <li class="item">
-//   <span className="status">{items.isOnline}</span>
-//   <img class="avatar" src={items.avatar} alt="User avatar" width="48" />
-//   <p class="name">{items.name}</p>
-// </li>
-//         </ul>
-//     )
-//     }
-//   )
-  
-// } 
+//       ))}
+//     </ul>
+// );
 
-// export default friendsList
+// export default friendsList;
+
+
+
+
