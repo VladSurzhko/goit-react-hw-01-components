@@ -9,25 +9,25 @@ import UserCss from "../users/user.module.css"
       <img
         src={avatar}
         alt="User avatar"
-        className="avatar"
+        className={avatar}
       />
-      <p className="name">{username}</p>
-      <p className="tag">{tag}</p>
-      <p className="location">{location}</p>
+      <p className={UserCss.name}>{username}</p>
+      <p className={UserCss.tag}>{tag}</p>
+      <p className={UserCss.location}>{location}</p>
     </div>
   
-    <ul className="stats">
+    <ul className={UserCss.stats}>
       <li>
-        <span className="label">Followers:</span>
-        <span className="quantity">{stats.followers}</span>
+        <span className={UserCss.label}>Followers:</span>
+        <span className={UserCss.quantity}>{stats.followers}</span>
       </li>
       <li>
-        <span className="label">Views:</span>
-        <span className="quantity">{stats.views}</span>
+        <span className={UserCss.label}>Views:</span>
+        <span className={UserCss.quantity}>{stats.views}</span>
       </li>
       <li>
-        <span className="label">Likes:</span>
-        <span className="quantity">{stats.likes}</span>
+        <span className={UserCss.label}>Likes:</span>
+        <span className={UserCss.quantity}>{stats.likes}</span>
       </li>
     </ul>
   </div>
