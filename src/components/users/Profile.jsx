@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import "./user.css"
+// import PropTypes from 'prop-types';
+import "../users/user.css"
 
 
  const Profile = ({username, tag, location, avatar, stats, followers, views, likes }) => {
@@ -35,13 +35,13 @@ import "./user.css"
   };
   export default Profile
 
-  Profile.propTypes = {
-    username:PropTypes.string,
-    tag:PropTypes.string,
-    location:PropTypes.string,
-    avatar:PropTypes.string,
-    stats:PropTypes.number,
-    followers:PropTypes.number,
-    views:PropTypes.number,
-    likes:PropTypes.number,  
-  }
+  // Profile.propTypes = {
+  //   username:PropTypes.string,
+  //   tag:PropTypes.string,
+  //   location:PropTypes.string,
+  //   avatar:PropTypes.string,
+  //   stats:PropTypes.number,
+  //   followers:PropTypes.number,
+  //   views:PropTypes.number,
+  //   likes:PropTypes.number,  
+  // }

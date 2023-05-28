@@ -9,18 +9,18 @@ const transHistory = () => (
       <th className="top" >Amount</th>
       <th className="top" >Currency</th>
     </tr>
-    </thead>
+  </thead>
 
-        <tbody>
+  <tbody>
         {trans.map((itemsy) => (
-        <tr key={itemsy.id}>
+     <tr key={itemsy.id}>
       <td className="type" >{itemsy.type}</td>
       <td className="type">{itemsy.amount}</td>
       <td className="type">{itemsy.currency}</td>
-        </tr>
+    </tr>
         ))}
-        </tbody>
-    
-        </table>
+  </tbody>
+        
+      </table>
 )
    export default transHistory 
