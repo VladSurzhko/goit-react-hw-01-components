@@ -33,7 +33,6 @@ FriendListItem.propTypes = {
   id:PropTypes.string,
   avatar:PropTypes.string,
   name:PropTypes.string,
-  isOnline:PropTypes.string,
 }
 
 

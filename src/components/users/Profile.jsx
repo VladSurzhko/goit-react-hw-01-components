@@ -39,6 +39,8 @@ import UserCss from "../users/user.module.css"
     username:PropTypes.string,
     tag:PropTypes.string,
     location:PropTypes.string,
-    avatar:PropTypes.string,
-    stats:PropTypes.string,  
+    avatar:PropTypes.string,  
+    followers:PropTypes.string,
+    views:PropTypes.string,
+    likes:PropTypes.string,
   }
