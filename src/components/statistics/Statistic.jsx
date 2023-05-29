@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
-import Stcss from "../statistics/statistic.module.css"
-import data from "../statistics/data.json";
+import stcss from "../statistics/statistic.module.css"
+// import data from "../statistics/data.json";
 
 
 
 
 
 
-const Statistic = ({title}) => (
-  <section className={Stcss.statistics}>
-    {title && <h2 className={Stcss.title}>{title}</h2>}
+const Statistic = ({title, stats}) => (
+  <section className={stcss.statistics}>
+    {title && <h2 className={stcss.title}>{title}</h2>}
 
-    <ul className={Stcss.statlist}>
-      {data.map((item) => (
-        <li key={item.id} className={Stcss.item}>
-          <span className={Stcss.label}>{item.label}</span>
-          <span className={Stcss.percentage}>{item.percentage}%</span>
+    <ul className={stcss.statlist}>
+      {stats.map((item) => (
+        <li key={item.id} className={stcss.item}>
+          <span className={stcss.label}>{item.label}</span>
+          <span className={stcss.percentage}>{item.percentage}%</span>
         </li>
       ))}
     </ul>
