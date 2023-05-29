@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import UserCss from "../users/user.module.css"
 
 
@@ -35,13 +35,10 @@ import UserCss from "../users/user.module.css"
   };
   export default Profile
 
-  // Profile.propTypes = {
-  //   username:PropTypes.string,
-  //   tag:PropTypes.string,
-  //   location:PropTypes.string,
-  //   avatar:PropTypes.string,
-  //   stats:PropTypes.number,
-  //   followers:PropTypes.number,
-  //   views:PropTypes.number,
-  //   likes:PropTypes.number,  
-  // }
+  Profile.propTypes = {
+    username:PropTypes.string,
+    tag:PropTypes.string,
+    location:PropTypes.string,
+    avatar:PropTypes.string,
+    stats:PropTypes.string,  
+  }

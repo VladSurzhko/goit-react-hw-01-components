@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import trans from "../TransactionHistory/transactions.json"
 import Trcss from "../TransactionHistory/transaction.module.css"
 
@@ -24,3 +25,10 @@ const transHistory = () => (
       </table>
 )
    export default transHistory 
+
+   transHistory.propTypes = {
+    id:PropTypes.string,
+    type:PropTypes.string,
+    amount:PropTypes.string,
+    currency:PropTypes.string,
+  }

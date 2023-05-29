@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Stcss from "../statistics/statistic.module.css"
 import data from "../statistics/data.json";
 
@@ -25,13 +25,14 @@ const Statistic = ({title}) => (
 export default Statistic;
 
 
-// Statistic.propTypes = {
-//     item:PropTypes.string,
-//     id:PropTypes.string,
-//     label:PropTypes.string,
-//     percentage:PropTypes.string,
+Statistic.propTypes = {
+    title:PropTypes.string,
+    item:PropTypes.string,
+    id:PropTypes.string,
+    label:PropTypes.string,
+    percentage:PropTypes.string,
      
-//   }
+  }
 
 
 
